@@ -16,6 +16,7 @@
 		7DCB38491CE32D7000C8231F /* FZMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB38481CE32D7000C8231F /* FZMenuController.m */; };
 		7DCB384C1CE32E2300C8231F /* SSJSettingMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB384B1CE32E2300C8231F /* SSJSettingMenuController.m */; };
 		7DCB384F1CE32F5200C8231F /* SSJBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB384E1CE32F5200C8231F /* SSJBaseController.m */; };
+		7DCF58301CE35ABB004AFD29 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF582F1CE35ABB004AFD29 /* Foundation+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,11 @@
 		7DCB384B1CE32E2300C8231F /* SSJSettingMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSettingMenuController.m; sourceTree = "<group>"; };
 		7DCB384D1CE32F5200C8231F /* SSJBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJBaseController.h; sourceTree = "<group>"; };
 		7DCB384E1CE32F5200C8231F /* SSJBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJBaseController.m; sourceTree = "<group>"; };
+		7DCF582E1CE35AA9004AFD29 /* FZDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZDebug.h; sourceTree = "<group>"; };
+		7DCF582F1CE35ABB004AFD29 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		7DCF58311CE35B44004AFD29 /* FZColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZColor.h; sourceTree = "<group>"; };
+		7DCF58321CE35B56004AFD29 /* FZSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZSize.h; sourceTree = "<group>"; };
+		7DCF58331CE35B6B004AFD29 /* FZStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZStyle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,8 @@
 		7DCB38021CE2CE8D00C8231F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7DCF582D1CE35A72004AFD29 /* FZDebug */,
+				7DCF582C1CE35A69004AFD29 /* FZStyle */,
 				7DCB38421CE320EB00C8231F /* FZMenuController */,
 				7DCB38031CE2CE8D00C8231F /* Category */,
 			);
@@ -153,6 +161,25 @@
 				7DCB38481CE32D7000C8231F /* FZMenuController.m */,
 			);
 			path = FZMenuController;
+			sourceTree = "<group>";
+		};
+		7DCF582C1CE35A69004AFD29 /* FZStyle */ = {
+			isa = PBXGroup;
+			children = (
+				7DCF58311CE35B44004AFD29 /* FZColor.h */,
+				7DCF58321CE35B56004AFD29 /* FZSize.h */,
+				7DCF58331CE35B6B004AFD29 /* FZStyle.h */,
+			);
+			path = FZStyle;
+			sourceTree = "<group>";
+		};
+		7DCF582D1CE35A72004AFD29 /* FZDebug */ = {
+			isa = PBXGroup;
+			children = (
+				7DCF582F1CE35ABB004AFD29 /* Foundation+Log.m */,
+				7DCF582E1CE35AA9004AFD29 /* FZDebug.h */,
+			);
+			path = FZDebug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +256,7 @@
 				7DCB380A1CE2DBF700C8231F /* SSJAccountListController.m in Sources */,
 				7DCB38061CE2CEB700C8231F /* UIView+Layout.m in Sources */,
 				7DCB384C1CE32E2300C8231F /* SSJSettingMenuController.m in Sources */,
+				7DCF58301CE35ABB004AFD29 /* Foundation+Log.m in Sources */,
 				7DCB384F1CE32F5200C8231F /* SSJBaseController.m in Sources */,
 				7DC928EA1CE1D1EC00B8DF76 /* AppDelegate.m in Sources */,
 				7DCB38491CE32D7000C8231F /* FZMenuController.m in Sources */,
