@@ -17,6 +17,7 @@
 		7DCB384C1CE32E2300C8231F /* SSJSettingMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB384B1CE32E2300C8231F /* SSJSettingMenuController.m */; };
 		7DCB384F1CE32F5200C8231F /* SSJBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB384E1CE32F5200C8231F /* SSJBaseController.m */; };
 		7DCF58301CE35ABB004AFD29 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF582F1CE35ABB004AFD29 /* Foundation+Log.m */; };
+		7DCF58361CE35DE0004AFD29 /* SSJAddAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF58351CE35DE0004AFD29 /* SSJAddAccountController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		7DCF58311CE35B44004AFD29 /* FZColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZColor.h; sourceTree = "<group>"; };
 		7DCF58321CE35B56004AFD29 /* FZSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZSize.h; sourceTree = "<group>"; };
 		7DCF58331CE35B6B004AFD29 /* FZStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZStyle.h; sourceTree = "<group>"; };
+		7DCF58341CE35DE0004AFD29 /* SSJAddAccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJAddAccountController.h; sourceTree = "<group>"; };
+		7DCF58351CE35DE0004AFD29 /* SSJAddAccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJAddAccountController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 			children = (
 				7DCB38081CE2DBF700C8231F /* SSJAccountListController.h */,
 				7DCB38091CE2DBF700C8231F /* SSJAccountListController.m */,
+				7DCF58341CE35DE0004AFD29 /* SSJAddAccountController.h */,
+				7DCF58351CE35DE0004AFD29 /* SSJAddAccountController.m */,
 			);
 			name = Account;
 			path = suishouji/Classes/Account;
@@ -257,6 +262,7 @@
 				7DCB38061CE2CEB700C8231F /* UIView+Layout.m in Sources */,
 				7DCB384C1CE32E2300C8231F /* SSJSettingMenuController.m in Sources */,
 				7DCF58301CE35ABB004AFD29 /* Foundation+Log.m in Sources */,
+				7DCF58361CE35DE0004AFD29 /* SSJAddAccountController.m in Sources */,
 				7DCB384F1CE32F5200C8231F /* SSJBaseController.m in Sources */,
 				7DC928EA1CE1D1EC00B8DF76 /* AppDelegate.m in Sources */,
 				7DCB38491CE32D7000C8231F /* FZMenuController.m in Sources */,

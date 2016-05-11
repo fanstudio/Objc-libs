@@ -8,6 +8,8 @@
 
 #import "SSJAccountListController.h"
 #import "SSJBaseController.h"
+#import "SSJAddAccountController.h"
+#import "FZStyle.h"
 
 
 @implementation SSJAccountListController
@@ -15,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = FZ_VIEW_COLOR;
     [self setupNavItems];
 }
 
@@ -33,5 +36,7 @@
 
 - (void)addNewAccount {
     NSLog(@"enter");
+    SSJAddAccountController *dstVc = [SSJAddAccountController new];
+    [self.navigationController pushViewController:dstVc animated:YES];
 }
 @end

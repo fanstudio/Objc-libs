@@ -9,8 +9,8 @@
 #ifndef FZStyle_h
 #define FZStyle_h
 
-#import "OAColor.h"
-#import "OASize.h"
-#import "OADebug.h"
+#import "FZColor.h"
+#import "FZSize.h"
+#import "FZDebug.h"
 
 #endif /* FZStyle_h */
