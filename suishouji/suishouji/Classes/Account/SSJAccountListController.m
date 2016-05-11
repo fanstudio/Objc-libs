@@ -9,6 +9,7 @@
 #import "SSJAccountListController.h"
 #import "SSJBaseController.h"
 #import "SSJAddAccountController.h"
+#import "UIBarButtonItem+FZExtension.h"
 #import "FZStyle.h"
 
 
@@ -23,8 +24,8 @@
 
 - (void)setupNavItems {
     self.navigationItem.title = @"账号列表";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewAccount)];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(showOrHideMenu)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonWithTarget:self Image:@"Category" highLightImage:nil action:@selector(showOrHideMenu)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonWithTarget:self Image:@"add" highLightImage:nil action:@selector(addNewAccount)];
 }
 
 #pragma mark - 事件处理

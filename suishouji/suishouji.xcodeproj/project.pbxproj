@@ -20,6 +20,7 @@
 		7DCF58361CE35DE0004AFD29 /* SSJAddAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF58351CE35DE0004AFD29 /* SSJAddAccountController.m */; };
 		7DCF583C1CE36ACE004AFD29 /* SSJBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF583B1CE36ACE004AFD29 /* SSJBaseNavController.m */; };
 		7DCF583F1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF583E1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m */; };
+		7DCF58421CE37754004AFD29 /* UIImage+FZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF58411CE37754004AFD29 /* UIImage+FZExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		7DCF583B1CE36ACE004AFD29 /* SSJBaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJBaseNavController.m; sourceTree = "<group>"; };
 		7DCF583D1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FZExtension.h"; sourceTree = "<group>"; };
 		7DCF583E1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FZExtension.m"; sourceTree = "<group>"; };
+		7DCF58401CE37754004AFD29 /* UIImage+FZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FZExtension.h"; sourceTree = "<group>"; };
+		7DCF58411CE37754004AFD29 /* UIImage+FZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FZExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 				7DCB38051CE2CEB700C8231F /* UIView+Layout.m */,
 				7DCF583D1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.h */,
 				7DCF583E1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m */,
+				7DCF58401CE37754004AFD29 /* UIImage+FZExtension.h */,
+				7DCF58411CE37754004AFD29 /* UIImage+FZExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				7DCB380A1CE2DBF700C8231F /* SSJAccountListController.m in Sources */,
 				7DCB38061CE2CEB700C8231F /* UIView+Layout.m in Sources */,
 				7DCB384C1CE32E2300C8231F /* SSJSettingMenuController.m in Sources */,
+				7DCF58421CE37754004AFD29 /* UIImage+FZExtension.m in Sources */,
 				7DCF58301CE35ABB004AFD29 /* Foundation+Log.m in Sources */,
 				7DCF583F1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m in Sources */,
 				7DCF58361CE35DE0004AFD29 /* SSJAddAccountController.m in Sources */,

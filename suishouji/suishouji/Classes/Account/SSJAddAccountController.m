@@ -7,6 +7,7 @@
 //
 
 #import "SSJAddAccountController.h"
+#import "UIBarButtonItem+FZExtension.h"
 #import "FZStyle.h"
 
 @interface SSJAddAccountController ()
@@ -20,7 +21,7 @@
 
     self.view.backgroundColor = FZ_VIEW_COLOR;
     self.navigationItem.title = @"记一条";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewRecord)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonWithTarget:self Image:@"add" highLightImage:nil action:@selector(addNewRecord)];
 }
 
 - (void)addNewRecord {
