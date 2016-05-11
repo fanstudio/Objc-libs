@@ -52,6 +52,8 @@
 }
 
 - (void)onGestureMove:(UIPanGestureRecognizer *)pan {
+    if (self.hideMenuEnable) return;
+    
     CGPoint translation = [pan translationInView:pan.view]; // 1.取出每次挪动的距离
     [self stepMoveViewByX:translation.x];                   // 2.轻移
     [pan setTranslation:CGPointZero inView:pan.view];       // 3.清空累计

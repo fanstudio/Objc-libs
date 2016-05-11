@@ -18,6 +18,8 @@
 		7DCB384F1CE32F5200C8231F /* SSJBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB384E1CE32F5200C8231F /* SSJBaseController.m */; };
 		7DCF58301CE35ABB004AFD29 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF582F1CE35ABB004AFD29 /* Foundation+Log.m */; };
 		7DCF58361CE35DE0004AFD29 /* SSJAddAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF58351CE35DE0004AFD29 /* SSJAddAccountController.m */; };
+		7DCF583C1CE36ACE004AFD29 /* SSJBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF583B1CE36ACE004AFD29 /* SSJBaseNavController.m */; };
+		7DCF583F1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF583E1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,10 @@
 		7DCF58331CE35B6B004AFD29 /* FZStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZStyle.h; sourceTree = "<group>"; };
 		7DCF58341CE35DE0004AFD29 /* SSJAddAccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJAddAccountController.h; sourceTree = "<group>"; };
 		7DCF58351CE35DE0004AFD29 /* SSJAddAccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJAddAccountController.m; sourceTree = "<group>"; };
+		7DCF583A1CE36ACE004AFD29 /* SSJBaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJBaseNavController.h; sourceTree = "<group>"; };
+		7DCF583B1CE36ACE004AFD29 /* SSJBaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJBaseNavController.m; sourceTree = "<group>"; };
+		7DCF583D1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FZExtension.h"; sourceTree = "<group>"; };
+		7DCF583E1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FZExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,8 @@
 			children = (
 				7DCB384D1CE32F5200C8231F /* SSJBaseController.h */,
 				7DCB384E1CE32F5200C8231F /* SSJBaseController.m */,
+				7DCF583A1CE36ACE004AFD29 /* SSJBaseNavController.h */,
+				7DCF583B1CE36ACE004AFD29 /* SSJBaseNavController.m */,
 				7DC928F21CE1E62100B8DF76 /* WelComeViewController.h */,
 				7DC928F31CE1E62100B8DF76 /* WelComeViewController.m */,
 				7DC928E21CE1D1EC00B8DF76 /* AppDelegate.h */,
@@ -143,6 +151,8 @@
 			children = (
 				7DCB38041CE2CEB700C8231F /* UIView+Layout.h */,
 				7DCB38051CE2CEB700C8231F /* UIView+Layout.m */,
+				7DCF583D1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.h */,
+				7DCF583E1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -262,10 +272,12 @@
 				7DCB38061CE2CEB700C8231F /* UIView+Layout.m in Sources */,
 				7DCB384C1CE32E2300C8231F /* SSJSettingMenuController.m in Sources */,
 				7DCF58301CE35ABB004AFD29 /* Foundation+Log.m in Sources */,
+				7DCF583F1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m in Sources */,
 				7DCF58361CE35DE0004AFD29 /* SSJAddAccountController.m in Sources */,
 				7DCB384F1CE32F5200C8231F /* SSJBaseController.m in Sources */,
 				7DC928EA1CE1D1EC00B8DF76 /* AppDelegate.m in Sources */,
 				7DCB38491CE32D7000C8231F /* FZMenuController.m in Sources */,
+				7DCF583C1CE36ACE004AFD29 /* SSJBaseNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

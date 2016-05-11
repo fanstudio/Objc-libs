@@ -10,6 +10,9 @@
 
 @interface FZMenuController : UIViewController
 
+/** 是否隐藏菜单，如果为TRUE，或滚动失效 */
+@property (nonatomic, assign) BOOL hideMenuEnable;
+
 /**
  menuVc - 左侧菜单控制器
  contentVc - 右侧内容控制器
@@ -19,9 +22,7 @@
                      contentVc:(UIViewController *)contentVc
                 leftWidthScale:(CGFloat)leftWidthScale;
 
-/**
- 显示或隐藏菜单栏
- */
+/** 显示或隐藏菜单栏 */
 - (void)showOrHideMenuView;
 
 @end

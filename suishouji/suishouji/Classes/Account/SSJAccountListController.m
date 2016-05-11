@@ -27,10 +27,30 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(showOrHideMenu)];
 }
 
+#pragma mark - 事件处理
+
 - (void)showOrHideMenu {
     if ([self.navigationController.parentViewController isKindOfClass:SSJBaseController.class]) {
         SSJBaseController *menuVc = (SSJBaseController *)self.navigationController.parentViewController;
         [menuVc showOrHideMenuView];
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if ([self.navigationController.parentViewController isKindOfClass:SSJBaseController.class]) {
+        SSJBaseController *menuVc = (SSJBaseController *)self.navigationController.parentViewController;
+        menuVc.hideMenuEnable = NO;
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    if ([self.navigationController.parentViewController isKindOfClass:SSJBaseController.class]) {
+        SSJBaseController *menuVc = (SSJBaseController *)self.navigationController.parentViewController;
+        menuVc.hideMenuEnable = YES;
     }
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "SSJSettingMenuController.h"
+#import "FZStyle.h"
 #import "UIView+Layout.h"
 
 @interface SSJSettingMenuController ()
@@ -22,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = FZ_MENU_COLOR;
     [self setupHeaderView];
     [self setupContentView];
     [self setupFooterView];
@@ -32,7 +34,6 @@
     UIView *headerView = [UIView new];
     [self.view addSubview:headerView];
     self.headerView = headerView;
-    headerView.backgroundColor = [UIColor grayColor];
 }
 
 - (void)setupContentView {
@@ -42,14 +43,12 @@
     contentView.showsVerticalScrollIndicator = NO;
     contentView.showsHorizontalScrollIndicator = NO;
     contentView.pagingEnabled = YES;
-    contentView.backgroundColor = [UIColor darkGrayColor];
 }
 
 - (void)setupFooterView {
     UIView *footerView = [UIView new];
     [self.view addSubview:footerView];
     self.footerView = footerView;
-    footerView.backgroundColor = [UIColor grayColor];
 }
 
 - (void)setupOptionItems {

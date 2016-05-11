@@ -9,6 +9,7 @@
 #import "SSJBaseController.h"
 #import "SSJSettingMenuController.h"
 #import "SSJAccountListController.h"
+#import "SSJBaseNavController.h"
 
 @interface SSJBaseController ()
 
@@ -18,7 +19,7 @@
 
 - (instancetype)init {
     UIViewController *menuVc = [SSJSettingMenuController new];
-    UIViewController *contentVc = [[UINavigationController alloc] initWithRootViewController:[SSJAccountListController new]];
+    UIViewController *contentVc = [[SSJBaseNavController alloc] initWithRootViewController:[SSJAccountListController new]];
     return [super initWithMenuVc:menuVc contentVc:contentVc leftWidthScale:0.45];
 }
 

@@ -18,6 +18,9 @@
 #define FZ_VIEW_COLOR FZColor(240, 240, 240)         // 基准色-controller.view的颜色
 #define FZ_BLACK_COLOR FZColor(50, 50, 50)           // 基准色-黑色
 #define FZ_GRAY_COLOR FZColor(150, 150, 150)         // 基准色-灰色文字
+#define FZ_BLUE_COLOR FZColor(63, 141, 208)          // 基准色-蓝色
+#define FZ_MENU_COLOR FZColor(36, 42, 47)            // 菜单颜色
+
 
 #define FZ_BORDER_GRAY_COLOR FZColor(226, 226, 226)       // 适用于控件边框的灰色
 #define FZ_COVER_COLOR FZ_ARGB(88, 0, 0, 0)               // 遮罩的颜色
