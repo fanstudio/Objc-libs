@@ -8,6 +8,7 @@
 
 #import "WelComeViewController.h"
 #import "SSJBaseController.h"
+#import "SSJSkipWelcomeView.h"
 #import "FZStyle.h"
 #import "UIView+Layout.h"
 
@@ -15,7 +16,7 @@
 
 @property (nonatomic, weak) UIScrollView *scrollView;
 @property (nonatomic, weak) UIImageView *welcomeImageView;
-@property (nonatomic, weak) UILabel *welComeLabel;
+@property (nonatomic, weak) SSJSkipWelcomeView *skipWelcomeView;
 
 @end
 
@@ -26,13 +27,13 @@
     
     [self setupScrollView];
     [self setupWelcomeImageView];
-    [self setupWelcomeLabel];
+    [self setupSkipWelcomeView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [self zoomShow];
+    [self animationZoomBigImage];
 }
 
 - (void)setupScrollView {
@@ -51,40 +52,43 @@
     welcomeImageView.userInteractionEnabled = YES;
 }
 
-- (void)setupWelcomeLabel {
-    UILabel *welComeLabel = [UILabel new];
-    [self.view addSubview:welComeLabel];
-    self.welComeLabel = welComeLabel;
-    welComeLabel.font = [UIFont systemFontOfSize:18.0];
-    welComeLabel.textColor = [UIColor whiteColor];
-    welComeLabel.text = @"作为一个程序员，怎能没有自嗨的APP...";
-    welComeLabel.backgroundColor = FZ_COVER_COLOR;
+- (void)setupSkipWelcomeView {
+    SSJSkipWelcomeView *skipWelcomeView = [SSJSkipWelcomeView welcomeView];
+    [self.view addSubview:skipWelcomeView];
+    self.skipWelcomeView = skipWelcomeView;
+//    [skipWelcomeView.actionButton addTarget:self action:@selector(onSkipWelCome) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)viewWillLayoutSubviews {
-    //
     self.scrollView.frame = self.view.bounds;
-    //
     self.welcomeImageView.frame = self.scrollView.bounds;
-    
-    //
-    self.welComeLabel.frame = CGRectMake(0, self.view.height - 80, self.view.width, 80);
+    self.skipWelcomeView.frame = CGRectMake(0, self.view.height - 80, self.view.width, 80);
 }
+
+#pragma mark - UIScrollViewDelegate
 
 - (nullable UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
     return self.welcomeImageView;
 }
 
-- (void)zoomShow {
+#pragma mark - 动画放大图片
+
+- (void)animationZoomBigImage {
     __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:5.0 animations:^{
         weakSelf.scrollView.zoomScale = weakSelf.scrollView.maximumZoomScale;
+        FZTrace;
     } completion:^(BOOL finished) {
-        UIWindow *wnd = [UIApplication sharedApplication].windows.lastObject;
-        wnd.rootViewController = [SSJBaseController new];
+        [weakSelf onSkipWelCome];
     }];
 }
 
+#pragma mark - 跳过欢迎界面
+
+- (void)onSkipWelCome {
+    UIWindow *wnd = [UIApplication sharedApplication].windows.lastObject;
+    wnd.rootViewController = [SSJBaseController new];
+}
 
 
 @end
