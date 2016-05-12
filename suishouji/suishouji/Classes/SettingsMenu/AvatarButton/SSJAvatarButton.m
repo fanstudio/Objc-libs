@@ -14,7 +14,7 @@
 
 - (void)awakeFromNib {
     self.backgroundColor = FZ_MENU_COLOR;
-    self.seperator.backgroundColor = FZ_GRAY_COLOR;
+    self.seperator.backgroundColor = [UIColor blackColor];
     self.avatarImageView.backgroundColor = FZ_GRAY_COLOR;
     self.avatarImageView.clipsToBounds = YES;
 }

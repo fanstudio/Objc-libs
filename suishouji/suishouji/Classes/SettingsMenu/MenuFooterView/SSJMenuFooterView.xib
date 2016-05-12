@@ -43,12 +43,22 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ka-iz-mB9">
                     <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTi-Ng-Ilh">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Z5r-hv-RUu"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="cTi-Ng-Ilh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6xg-xa-YNu"/>
                 <constraint firstAttribute="bottom" secondItem="NkA-p6-sCN" secondAttribute="bottom" constant="20" id="Hoe-ro-RDS"/>
                 <constraint firstItem="NkA-p6-sCN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="JcN-c3-ReA"/>
                 <constraint firstItem="7ka-iz-mB9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M2O-Tx-ice"/>
+                <constraint firstAttribute="trailing" secondItem="cTi-Ng-Ilh" secondAttribute="trailing" id="PxE-Pw-M7L"/>
+                <constraint firstItem="cTi-Ng-Ilh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Trm-5K-PoZ"/>
                 <constraint firstItem="NkA-p6-sCN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Ycf-xO-IPV"/>
                 <constraint firstAttribute="bottom" secondItem="7ka-iz-mB9" secondAttribute="bottom" id="h7e-KS-DQN"/>
                 <constraint firstItem="7ka-iz-mB9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="phS-Ut-wUo"/>
