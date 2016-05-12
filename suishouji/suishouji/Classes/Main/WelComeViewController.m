@@ -8,6 +8,8 @@
 
 #import "WelComeViewController.h"
 #import "SSJBaseController.h"
+#import "FZStyle.h"
+#import "UIView+Layout.h"
 
 @interface WelComeViewController ()<UIScrollViewDelegate>
 
@@ -53,12 +55,10 @@
     UILabel *welComeLabel = [UILabel new];
     [self.view addSubview:welComeLabel];
     self.welComeLabel = welComeLabel;
-    welComeLabel.font = [UIFont boldSystemFontOfSize:22.0];
+    welComeLabel.font = [UIFont systemFontOfSize:20.0];
     welComeLabel.textColor = [UIColor whiteColor];
-    welComeLabel.text = @"    随手记，你身边的密码管家";
-    welComeLabel.numberOfLines = 0;
-    welComeLabel.layer.borderWidth = 1.0;
-    welComeLabel.layer.borderColor = [UIColor whiteColor].CGColor;
+    welComeLabel.text = @"    随手记，我自己的密码管家......";
+    welComeLabel.backgroundColor = FZ_COVER_COLOR;
 }
 
 - (void)viewWillLayoutSubviews {
@@ -68,11 +68,7 @@
     self.welcomeImageView.frame = self.scrollView.bounds;
     
     //
-    CGFloat padding = 20;
-    CGFloat width = self.view.frame.size.width - 2 * padding;
-    CGFloat height = 60;
-    CGFloat y = self.view.frame.size.height * 0.35;
-    self.welComeLabel.frame = CGRectMake(padding, y, width, height);
+    self.welComeLabel.frame = CGRectMake(0, self.view.height - 80, self.view.width, 80);
 }
 
 - (nullable UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
@@ -81,7 +77,7 @@
 
 - (void)zoomShow {
     __weak typeof(self) weakSelf = self;
-    [UIView animateWithDuration:2.0 animations:^{
+    [UIView animateWithDuration:5.0 animations:^{
         weakSelf.scrollView.zoomScale = weakSelf.scrollView.maximumZoomScale;
     } completion:^(BOOL finished) {
         UIWindow *wnd = [UIApplication sharedApplication].windows.lastObject;
