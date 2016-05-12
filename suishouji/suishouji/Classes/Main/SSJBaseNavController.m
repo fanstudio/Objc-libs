@@ -46,10 +46,6 @@
     self.navigationBar.titleTextAttributes = titleAttrs;
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
-
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.viewControllers.count > 0) {
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonWithTarget:self Image:@"back" highLightImage:nil action:@selector(back)];

@@ -23,4 +23,8 @@
     return [super initWithMenuVc:menuVc contentVc:contentVc leftWidthScale:0.45];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 @end

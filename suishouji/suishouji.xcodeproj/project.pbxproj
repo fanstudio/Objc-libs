@@ -133,10 +133,10 @@
 		7DC928E11CE1D1EC00B8DF76 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				7DCB384D1CE32F5200C8231F /* SSJBaseController.h */,
-				7DCB384E1CE32F5200C8231F /* SSJBaseController.m */,
 				7DCF583A1CE36ACE004AFD29 /* SSJBaseNavController.h */,
 				7DCF583B1CE36ACE004AFD29 /* SSJBaseNavController.m */,
+				7DCB384D1CE32F5200C8231F /* SSJBaseController.h */,
+				7DCB384E1CE32F5200C8231F /* SSJBaseController.m */,
 				7DC928F21CE1E62100B8DF76 /* WelComeViewController.h */,
 				7DC928F31CE1E62100B8DF76 /* WelComeViewController.m */,
 				7DC928E21CE1D1EC00B8DF76 /* AppDelegate.h */,
