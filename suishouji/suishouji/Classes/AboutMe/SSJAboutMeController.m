@@ -7,11 +7,9 @@
 //
 
 #import "SSJAboutMeController.h"
-
+#import "FZStyle.h"
 
 @interface SSJAboutMeController ()
-
-@property (nonatomic, weak) UIWebView *webView;
 
 @end
 
@@ -20,21 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIWebView *webView = [UIWebView new];
-    [self.view addSubview:webView];
-    self.webView = webView;
-    
-    NSURL *url = [NSURL URLWithString:@"http://www.mionsoft.com"];
-    NSURLRequest *reqest = [NSURLRequest requestWithURL:url];
-    [webView loadRequest:reqest];
+    [self setProgressTintColor:FZ_MENU_COLOR];
+    [self loadPageWithUrl:@"http://www.mionsoft.com"];
 }
-
-- (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
-    self.webView.frame = self.view.bounds;
-}
-
-
 
 
 

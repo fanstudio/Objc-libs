@@ -87,6 +87,7 @@
 #pragma mark - 强制超过，这里会引发结束动画
 
 - (void)endAnimation {
+    // http://stackoverflow.com/questions/554997/cancel-a-uiview-animation
     [self.scrollView removeFromSuperview];
 }
 

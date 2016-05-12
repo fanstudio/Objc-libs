@@ -6,8 +6,8 @@
 //  Copyright © 2016年 fanstudio. All rights reserved.
 //
 
-#import "SSJBaseContentViewController.h"
+#import "FZWebViewController.h"
 
-@interface SSJAboutMeController : SSJBaseContentViewController
+@interface SSJAboutMeController : FZWebViewController
 
 @end

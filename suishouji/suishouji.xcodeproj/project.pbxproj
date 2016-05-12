@@ -16,6 +16,7 @@
 		7D166CFE1CE479DF00E90082 /* SSJBaseContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D166CFD1CE479DF00E90082 /* SSJBaseContentViewController.m */; };
 		7D166D021CE484F900E90082 /* SSJSkipWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D166D011CE484F900E90082 /* SSJSkipWelcomeView.m */; };
 		7D166D041CE4852900E90082 /* SSJSkipWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D166D031CE4852900E90082 /* SSJSkipWelcomeView.xib */; };
+		7D166D421CE4C12100E90082 /* FZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D166D411CE4C12100E90082 /* FZWebViewController.m */; };
 		7DC928EA1CE1D1EC00B8DF76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC928E31CE1D1EC00B8DF76 /* AppDelegate.m */; };
 		7DC928EB1CE1D1EC00B8DF76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC928E41CE1D1EC00B8DF76 /* main.m */; };
 		7DC928EC1CE1D1EC00B8DF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC928E61CE1D1EC00B8DF76 /* Assets.xcassets */; };
@@ -48,6 +49,8 @@
 		7D166D001CE484F900E90082 /* SSJSkipWelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJSkipWelcomeView.h; sourceTree = "<group>"; };
 		7D166D011CE484F900E90082 /* SSJSkipWelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSkipWelcomeView.m; sourceTree = "<group>"; };
 		7D166D031CE4852900E90082 /* SSJSkipWelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSJSkipWelcomeView.xib; sourceTree = "<group>"; };
+		7D166D401CE4C12100E90082 /* FZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZWebViewController.h; sourceTree = "<group>"; };
+		7D166D411CE4C12100E90082 /* FZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZWebViewController.m; sourceTree = "<group>"; };
 		7DC928C61CE1D13100B8DF76 /* suishouji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = suishouji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC928E21CE1D1EC00B8DF76 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DC928E31CE1D1EC00B8DF76 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -140,6 +143,15 @@
 			path = SkipWelcomeView;
 			sourceTree = "<group>";
 		};
+		7D166D3F1CE4C10500E90082 /* FZWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7D166D401CE4C12100E90082 /* FZWebViewController.h */,
+				7D166D411CE4C12100E90082 /* FZWebViewController.m */,
+			);
+			path = FZWebViewController;
+			sourceTree = "<group>";
+		};
 		7DC928BD1CE1D13100B8DF76 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +232,7 @@
 		7DCB38021CE2CE8D00C8231F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7D166D3F1CE4C10500E90082 /* FZWebViewController */,
 				7DCF582D1CE35A72004AFD29 /* FZDebug */,
 				7DCF582C1CE35A69004AFD29 /* FZStyle */,
 				7DCB38421CE320EB00C8231F /* FZMenuController */,
@@ -370,6 +383,7 @@
 				7DC928EA1CE1D1EC00B8DF76 /* AppDelegate.m in Sources */,
 				7D166CF91CE473EB00E90082 /* SSJMenuFooterView.m in Sources */,
 				7D166CEB1CE41CA900E90082 /* SSJArticleController.m in Sources */,
+				7D166D421CE4C12100E90082 /* FZWebViewController.m in Sources */,
 				7DCB38491CE32D7000C8231F /* FZMenuController.m in Sources */,
 				7DCF583C1CE36ACE004AFD29 /* SSJBaseNavController.m in Sources */,
 			);
