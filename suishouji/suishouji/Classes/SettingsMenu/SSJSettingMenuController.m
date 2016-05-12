@@ -9,11 +9,12 @@
 #import "SSJSettingMenuController.h"
 #import "FZStyle.h"
 #import "UIView+Layout.h"
-
 #import "SSJBaseController.h"
+
 #import "SSJBaseNavController.h"
 #import "SSJAccountListController.h"
 #import "SSJArticleController.h"
+#import "SSJAboutMeController.h"
 
 @interface SSJSettingMenuController ()
 
@@ -59,6 +60,7 @@
 - (void)setupOptionItems {
     [self addItemWithText:@"账号列表" image:nil];
     [self addItemWithText:@"近期文章" image:nil];
+    [self addItemWithText:@"关于我" image:nil];
 }
 
 - (void)addItemWithText:(NSString *)text image:(NSString *)image {
@@ -106,16 +108,21 @@
 - (void)changeContentViewControllerByTitle:(NSString *)title {
     UIViewController *contentVc = nil;
     if ([title isEqualToString:@"账号列表"]) {
-        contentVc = [[SSJBaseNavController alloc] initWithRootViewController:[SSJAccountListController new]];
+        contentVc = [SSJAccountListController new];
     }
     
     if ([title isEqualToString:@"近期文章"]) {
-        contentVc = [[SSJBaseNavController alloc] initWithRootViewController:[SSJArticleController new]];
+        contentVc = [SSJArticleController new];
+    }
+    
+    if ([title isEqualToString:@"关于我"]) {
+        contentVc = [SSJAboutMeController new];
     }
     
     if (!contentVc) return;
+    contentVc.navigationItem.title = title;
     SSJBaseController *menuVc = (SSJBaseController *)self.parentViewController;
-    [menuVc changeContentViewController:contentVc];
+    [menuVc changeContentViewController:[[SSJBaseNavController alloc] initWithRootViewController:contentVc]];
 }
 
 @end

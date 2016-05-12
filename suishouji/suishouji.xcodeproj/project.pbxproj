@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D166CEB1CE41CA900E90082 /* SSJArticleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D166CEA1CE41CA900E90082 /* SSJArticleController.m */; };
+		7D166CEF1CE4312700E90082 /* SSJAboutMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D166CEE1CE4312700E90082 /* SSJAboutMeController.m */; };
 		7DC928EA1CE1D1EC00B8DF76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC928E31CE1D1EC00B8DF76 /* AppDelegate.m */; };
 		7DC928EB1CE1D1EC00B8DF76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC928E41CE1D1EC00B8DF76 /* main.m */; };
 		7DC928EC1CE1D1EC00B8DF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC928E61CE1D1EC00B8DF76 /* Assets.xcassets */; };
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		7D166CE91CE41CA900E90082 /* SSJArticleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJArticleController.h; sourceTree = "<group>"; };
 		7D166CEA1CE41CA900E90082 /* SSJArticleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJArticleController.m; sourceTree = "<group>"; };
+		7D166CED1CE4312700E90082 /* SSJAboutMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJAboutMeController.h; sourceTree = "<group>"; };
+		7D166CEE1CE4312700E90082 /* SSJAboutMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJAboutMeController.m; sourceTree = "<group>"; };
 		7DC928C61CE1D13100B8DF76 /* suishouji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = suishouji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC928E21CE1D1EC00B8DF76 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DC928E31CE1D1EC00B8DF76 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +83,15 @@
 			path = Article;
 			sourceTree = "<group>";
 		};
+		7D166CEC1CE4310700E90082 /* AboutMe */ = {
+			isa = PBXGroup;
+			children = (
+				7D166CED1CE4312700E90082 /* SSJAboutMeController.h */,
+				7D166CEE1CE4312700E90082 /* SSJAboutMeController.m */,
+			);
+			path = AboutMe;
+			sourceTree = "<group>";
+		};
 		7DC928BD1CE1D13100B8DF76 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +123,7 @@
 				7DC928E11CE1D1EC00B8DF76 /* Main */,
 				7DCB38021CE2CE8D00C8231F /* Common */,
 				7DCB37FE1CE2C81F00C8231F /* SettingsMenu */,
+				7D166CEC1CE4310700E90082 /* AboutMe */,
 				7D166CE81CE41C5800E90082 /* Article */,
 				7DCB38071CE2DBAE00C8231F /* Account */,
 			);
@@ -287,6 +300,7 @@
 				7DC928EB1CE1D1EC00B8DF76 /* main.m in Sources */,
 				7DC928F41CE1E62100B8DF76 /* WelComeViewController.m in Sources */,
 				7DCB380A1CE2DBF700C8231F /* SSJAccountListController.m in Sources */,
+				7D166CEF1CE4312700E90082 /* SSJAboutMeController.m in Sources */,
 				7DCB38061CE2CEB700C8231F /* UIView+Layout.m in Sources */,
 				7DCB384C1CE32E2300C8231F /* SSJSettingMenuController.m in Sources */,
 				7DCF58421CE37754004AFD29 /* UIImage+FZExtension.m in Sources */,
