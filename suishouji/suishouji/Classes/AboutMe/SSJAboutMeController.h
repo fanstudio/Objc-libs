@@ -6,8 +6,8 @@
 //  Copyright © 2016年 fanstudio. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SSJBaseContentViewController.h"
 
-@interface SSJAboutMeController : UIViewController
+@interface SSJAboutMeController : SSJBaseContentViewController
 
 @end

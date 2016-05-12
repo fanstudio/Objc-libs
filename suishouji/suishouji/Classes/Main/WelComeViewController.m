@@ -55,9 +55,9 @@
     UILabel *welComeLabel = [UILabel new];
     [self.view addSubview:welComeLabel];
     self.welComeLabel = welComeLabel;
-    welComeLabel.font = [UIFont systemFontOfSize:20.0];
+    welComeLabel.font = [UIFont systemFontOfSize:18.0];
     welComeLabel.textColor = [UIColor whiteColor];
-    welComeLabel.text = @"    随手记，我自己的密码管家......";
+    welComeLabel.text = @"作为一个程序员，怎能没有自嗨的APP...";
     welComeLabel.backgroundColor = FZ_COVER_COLOR;
 }
 

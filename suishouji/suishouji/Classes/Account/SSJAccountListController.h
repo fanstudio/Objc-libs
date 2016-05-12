@@ -6,8 +6,8 @@
 //  Copyright © 2016年 fanstudio. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SSJBaseContentViewController.h"
 
-@interface SSJAccountListController : UIViewController
+@interface SSJAccountListController : SSJBaseContentViewController
 
 @end
