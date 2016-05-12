@@ -11,6 +11,7 @@
 #import "SSJSkipWelcomeView.h"
 #import "FZStyle.h"
 #import "UIView+Layout.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface WelComeViewController ()<UIScrollViewDelegate>
 
@@ -56,7 +57,7 @@
     SSJSkipWelcomeView *skipWelcomeView = [SSJSkipWelcomeView welcomeView];
     [self.view addSubview:skipWelcomeView];
     self.skipWelcomeView = skipWelcomeView;
-//    [skipWelcomeView.actionButton addTarget:self action:@selector(onSkipWelCome) forControlEvents:UIControlEventTouchUpInside];
+    [skipWelcomeView.actionButton addTarget:self action:@selector(endAnimation) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)viewWillLayoutSubviews {
@@ -71,23 +72,22 @@
     return self.welcomeImageView;
 }
 
-#pragma mark - 动画放大图片
+#pragma mark - 动画放大图片,中断或结束时跳过欢迎界面
 
 - (void)animationZoomBigImage {
     __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:5.0 animations:^{
         weakSelf.scrollView.zoomScale = weakSelf.scrollView.maximumZoomScale;
-        FZTrace;
     } completion:^(BOOL finished) {
-        [weakSelf onSkipWelCome];
+        UIWindow *wnd = [UIApplication sharedApplication].windows.lastObject;
+        wnd.rootViewController = [SSJBaseController new];
     }];
 }
 
-#pragma mark - 跳过欢迎界面
+#pragma mark - 强制超过，这里会引发结束动画
 
-- (void)onSkipWelCome {
-    UIWindow *wnd = [UIApplication sharedApplication].windows.lastObject;
-    wnd.rootViewController = [SSJBaseController new];
+- (void)endAnimation {
+    [self.scrollView removeFromSuperview];
 }
 
 
