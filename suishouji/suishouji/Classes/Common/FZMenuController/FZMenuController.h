@@ -25,4 +25,7 @@
 /** 显示或隐藏菜单栏 */
 - (void)showOrHideMenuView;
 
+/** 改变右侧的内容控制器，以及显示的内容 */
+- (void)changeContentViewController:(UIViewController *)contentVc;
+
 @end

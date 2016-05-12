@@ -10,6 +10,11 @@
 #import "FZStyle.h"
 #import "UIView+Layout.h"
 
+#import "SSJBaseController.h"
+#import "SSJBaseNavController.h"
+#import "SSJAccountListController.h"
+#import "SSJArticleController.h"
+
 @interface SSJSettingMenuController ()
 
 @property (nonatomic, weak) UIView *headerView;
@@ -52,9 +57,8 @@
 }
 
 - (void)setupOptionItems {
-    for (NSInteger idx = 0; idx < 25; idx++) {
-        [self addItemWithText:@"账号列表" image:nil];
-    }
+    [self addItemWithText:@"账号列表" image:nil];
+    [self addItemWithText:@"近期文章" image:nil];
 }
 
 - (void)addItemWithText:(NSString *)text image:(NSString *)image {
@@ -63,6 +67,7 @@
     [btn setTitle:text forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:14.0];
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(onItemChange:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -89,5 +94,28 @@
     self.contentView.contentSize = CGSizeMake(0, idx * height);
 }
 
+
+#pragma mark - 事件
+
+- (void)onItemChange:(UIButton *)button {
+    [self changeContentViewControllerByTitle:button.titleLabel.text];
+}
+
+#pragma mark - 改变右侧内容
+
+- (void)changeContentViewControllerByTitle:(NSString *)title {
+    UIViewController *contentVc = nil;
+    if ([title isEqualToString:@"账号列表"]) {
+        contentVc = [[SSJBaseNavController alloc] initWithRootViewController:[SSJAccountListController new]];
+    }
+    
+    if ([title isEqualToString:@"近期文章"]) {
+        contentVc = [[SSJBaseNavController alloc] initWithRootViewController:[SSJArticleController new]];
+    }
+    
+    if (!contentVc) return;
+    SSJBaseController *menuVc = (SSJBaseController *)self.parentViewController;
+    [menuVc changeContentViewController:contentVc];
+}
 
 @end
