@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		7D166CEB1CE41CA900E90082 /* SSJArticleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D166CEA1CE41CA900E90082 /* SSJArticleController.m */; };
 		7D166CEF1CE4312700E90082 /* SSJAboutMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D166CEE1CE4312700E90082 /* SSJAboutMeController.m */; };
+		7D166CF31CE4664100E90082 /* SSJAvatarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D166CF21CE4664100E90082 /* SSJAvatarButton.m */; };
+		7D166CF51CE4665E00E90082 /* SSJAvatarButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D166CF41CE4665E00E90082 /* SSJAvatarButton.xib */; };
+		7D166CF91CE473EB00E90082 /* SSJMenuFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D166CF81CE473EB00E90082 /* SSJMenuFooterView.m */; };
+		7D166CFB1CE473FB00E90082 /* SSJMenuFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D166CFA1CE473FB00E90082 /* SSJMenuFooterView.xib */; };
 		7DC928EA1CE1D1EC00B8DF76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC928E31CE1D1EC00B8DF76 /* AppDelegate.m */; };
 		7DC928EB1CE1D1EC00B8DF76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC928E41CE1D1EC00B8DF76 /* main.m */; };
 		7DC928EC1CE1D1EC00B8DF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC928E61CE1D1EC00B8DF76 /* Assets.xcassets */; };
@@ -30,6 +34,12 @@
 		7D166CEA1CE41CA900E90082 /* SSJArticleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJArticleController.m; sourceTree = "<group>"; };
 		7D166CED1CE4312700E90082 /* SSJAboutMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJAboutMeController.h; sourceTree = "<group>"; };
 		7D166CEE1CE4312700E90082 /* SSJAboutMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJAboutMeController.m; sourceTree = "<group>"; };
+		7D166CF11CE4664100E90082 /* SSJAvatarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJAvatarButton.h; sourceTree = "<group>"; };
+		7D166CF21CE4664100E90082 /* SSJAvatarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJAvatarButton.m; sourceTree = "<group>"; };
+		7D166CF41CE4665E00E90082 /* SSJAvatarButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSJAvatarButton.xib; sourceTree = "<group>"; };
+		7D166CF71CE473EB00E90082 /* SSJMenuFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJMenuFooterView.h; sourceTree = "<group>"; };
+		7D166CF81CE473EB00E90082 /* SSJMenuFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJMenuFooterView.m; sourceTree = "<group>"; };
+		7D166CFA1CE473FB00E90082 /* SSJMenuFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSJMenuFooterView.xib; sourceTree = "<group>"; };
 		7DC928C61CE1D13100B8DF76 /* suishouji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = suishouji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC928E21CE1D1EC00B8DF76 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DC928E31CE1D1EC00B8DF76 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +100,26 @@
 				7D166CEE1CE4312700E90082 /* SSJAboutMeController.m */,
 			);
 			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		7D166CF01CE4660900E90082 /* AvatarButton */ = {
+			isa = PBXGroup;
+			children = (
+				7D166CF11CE4664100E90082 /* SSJAvatarButton.h */,
+				7D166CF21CE4664100E90082 /* SSJAvatarButton.m */,
+				7D166CF41CE4665E00E90082 /* SSJAvatarButton.xib */,
+			);
+			path = AvatarButton;
+			sourceTree = "<group>";
+		};
+		7D166CF61CE473D200E90082 /* MenuFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				7D166CF71CE473EB00E90082 /* SSJMenuFooterView.h */,
+				7D166CF81CE473EB00E90082 /* SSJMenuFooterView.m */,
+				7D166CFA1CE473FB00E90082 /* SSJMenuFooterView.xib */,
+			);
+			path = MenuFooterView;
 			sourceTree = "<group>";
 		};
 		7DC928BD1CE1D13100B8DF76 = {
@@ -158,6 +188,8 @@
 		7DCB37FE1CE2C81F00C8231F /* SettingsMenu */ = {
 			isa = PBXGroup;
 			children = (
+				7D166CF61CE473D200E90082 /* MenuFooterView */,
+				7D166CF01CE4660900E90082 /* AvatarButton */,
 				7DCB384A1CE32E2300C8231F /* SSJSettingMenuController.h */,
 				7DCB384B1CE32E2300C8231F /* SSJSettingMenuController.m */,
 			);
@@ -287,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DC928EC1CE1D1EC00B8DF76 /* Assets.xcassets in Resources */,
+				7D166CF51CE4665E00E90082 /* SSJAvatarButton.xib in Resources */,
+				7D166CFB1CE473FB00E90082 /* SSJMenuFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,11 +338,13 @@
 				7DCB38061CE2CEB700C8231F /* UIView+Layout.m in Sources */,
 				7DCB384C1CE32E2300C8231F /* SSJSettingMenuController.m in Sources */,
 				7DCF58421CE37754004AFD29 /* UIImage+FZExtension.m in Sources */,
+				7D166CF31CE4664100E90082 /* SSJAvatarButton.m in Sources */,
 				7DCF58301CE35ABB004AFD29 /* Foundation+Log.m in Sources */,
 				7DCF583F1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m in Sources */,
 				7DCF58361CE35DE0004AFD29 /* SSJAddAccountController.m in Sources */,
 				7DCB384F1CE32F5200C8231F /* SSJBaseController.m in Sources */,
 				7DC928EA1CE1D1EC00B8DF76 /* AppDelegate.m in Sources */,
+				7D166CF91CE473EB00E90082 /* SSJMenuFooterView.m in Sources */,
 				7D166CEB1CE41CA900E90082 /* SSJArticleController.m in Sources */,
 				7DCB38491CE32D7000C8231F /* FZMenuController.m in Sources */,
 				7DCF583C1CE36ACE004AFD29 /* SSJBaseNavController.m in Sources */,

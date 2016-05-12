@@ -7,6 +7,8 @@
 //
 
 #import "SSJSettingMenuController.h"
+#import "SSJAvatarButton.h"
+#import "SSJMenuFooterView.h"
 #import "FZStyle.h"
 #import "UIView+Layout.h"
 #import "SSJBaseController.h"
@@ -18,9 +20,9 @@
 
 @interface SSJSettingMenuController ()
 
-@property (nonatomic, weak) UIView *headerView;
+@property (nonatomic, weak) SSJAvatarButton *headerView;
 @property (nonatomic, weak) UIScrollView *contentView;
-@property (nonatomic, weak) UIView *footerView;
+@property (nonatomic, weak) SSJMenuFooterView *footerView;
 
 @end
 
@@ -37,9 +39,10 @@
 }
 
 - (void)setupHeaderView {
-    UIView *headerView = [UIView new];
+    SSJAvatarButton *headerView = [SSJAvatarButton avatarButton];
     [self.view addSubview:headerView];
     self.headerView = headerView;
+    [headerView.actionButton addTarget:self action:@selector(onClickUserIcon) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)setupContentView {
@@ -52,7 +55,7 @@
 }
 
 - (void)setupFooterView {
-    UIView *footerView = [UIView new];
+    SSJMenuFooterView *footerView = [SSJMenuFooterView footerView];
     [self.view addSubview:footerView];
     self.footerView = footerView;
 }
@@ -68,7 +71,8 @@
     [self.contentView addSubview:btn];
     [btn setTitle:text forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:14.0];
-    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btn setTitleColor:FZ_GRAY_COLOR forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
     [btn addTarget:self action:@selector(onItemChange:) forControlEvents:UIControlEventTouchUpInside];
 }
 
@@ -76,10 +80,10 @@
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     
-    CGFloat headerHeight = 100;
+    CGFloat headerHeight = 128;
     self.headerView.frame = CGRectMake(0, 0, self.view.width, headerHeight);
     
-    CGFloat footerHeight = 44;
+    CGFloat footerHeight = 80;
     self.footerView.frame = CGRectMake(0, self.view.height - footerHeight, self.view.width, footerHeight);
     
     CGFloat contentHeight = self.view.height - headerHeight - footerHeight;
@@ -96,14 +100,13 @@
     self.contentView.contentSize = CGSizeMake(0, idx * height);
 }
 
-
 #pragma mark - 事件
+
+#pragma mark 改变右侧内容
 
 - (void)onItemChange:(UIButton *)button {
     [self changeContentViewControllerByTitle:button.titleLabel.text];
 }
-
-#pragma mark - 改变右侧内容
 
 - (void)changeContentViewControllerByTitle:(NSString *)title {
     UIViewController *contentVc = nil;
@@ -123,6 +126,12 @@
     contentVc.navigationItem.title = title;
     SSJBaseController *menuVc = (SSJBaseController *)self.parentViewController;
     [menuVc changeContentViewController:[[SSJBaseNavController alloc] initWithRootViewController:contentVc]];
+}
+
+#pragma mark 登录
+
+- (void)onClickUserIcon {
+    FZTrace;
 }
 
 @end
