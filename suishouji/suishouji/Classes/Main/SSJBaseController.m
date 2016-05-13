@@ -19,7 +19,9 @@
 
 - (instancetype)init {
     UIViewController *menuVc = [SSJSettingMenuController new];
-    UIViewController *contentVc = [[SSJBaseNavController alloc] initWithRootViewController:[SSJAccountListController new]];
+    UIViewController *firstShowVc = [SSJAccountListController new];
+    firstShowVc.navigationItem.title = @"账号列表";
+    UIViewController *contentVc = [[SSJBaseNavController alloc] initWithRootViewController:firstShowVc];
     return [super initWithMenuVc:menuVc contentVc:contentVc leftWidthScale:0.45];
 }
 

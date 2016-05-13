@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rf1-D1-4X4">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="Rf1-D1-4X4">
                     <rect key="frame" x="110" y="10" width="80" height="80"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="DNC-My-SYE"/>
@@ -50,4 +50,7 @@
             </connections>
         </view>
     </objects>
+    <resources>
+        <image name="me" width="49" height="50"/>
+    </resources>
 </document>
