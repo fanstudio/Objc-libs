@@ -16,21 +16,21 @@
 		7D166CFE1CE479DF00E90082 /* SSJBaseContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D166CFD1CE479DF00E90082 /* SSJBaseContentViewController.m */; };
 		7D166D021CE484F900E90082 /* SSJSkipWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D166D011CE484F900E90082 /* SSJSkipWelcomeView.m */; };
 		7D166D041CE4852900E90082 /* SSJSkipWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D166D031CE4852900E90082 /* SSJSkipWelcomeView.xib */; };
-		7D166D421CE4C12100E90082 /* FZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D166D411CE4C12100E90082 /* FZWebViewController.m */; };
+		7DC8380A1CE70E7E0001A9A4 /* UIBarButtonItem+FZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC837F71CE70E7E0001A9A4 /* UIBarButtonItem+FZExtension.m */; };
+		7DC8380B1CE70E7E0001A9A4 /* UIImage+FZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC837F91CE70E7E0001A9A4 /* UIImage+FZExtension.m */; };
+		7DC8380C1CE70E7E0001A9A4 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC837FB1CE70E7E0001A9A4 /* UIView+Layout.m */; };
+		7DC8380D1CE70E7E0001A9A4 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC837FE1CE70E7E0001A9A4 /* Foundation+Log.m */; };
+		7DC8380E1CE70E7E0001A9A4 /* FZMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC838021CE70E7E0001A9A4 /* FZMenuController.m */; };
+		7DC8380F1CE70E7E0001A9A4 /* FZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC838091CE70E7E0001A9A4 /* FZWebViewController.m */; };
 		7DC928EA1CE1D1EC00B8DF76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC928E31CE1D1EC00B8DF76 /* AppDelegate.m */; };
 		7DC928EB1CE1D1EC00B8DF76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC928E41CE1D1EC00B8DF76 /* main.m */; };
 		7DC928EC1CE1D1EC00B8DF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC928E61CE1D1EC00B8DF76 /* Assets.xcassets */; };
 		7DC928F41CE1E62100B8DF76 /* WelComeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC928F31CE1E62100B8DF76 /* WelComeViewController.m */; };
-		7DCB38061CE2CEB700C8231F /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB38051CE2CEB700C8231F /* UIView+Layout.m */; };
 		7DCB380A1CE2DBF700C8231F /* SSJAccountListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB38091CE2DBF700C8231F /* SSJAccountListController.m */; };
-		7DCB38491CE32D7000C8231F /* FZMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB38481CE32D7000C8231F /* FZMenuController.m */; };
 		7DCB384C1CE32E2300C8231F /* SSJSettingMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB384B1CE32E2300C8231F /* SSJSettingMenuController.m */; };
 		7DCB384F1CE32F5200C8231F /* SSJBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB384E1CE32F5200C8231F /* SSJBaseController.m */; };
-		7DCF58301CE35ABB004AFD29 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF582F1CE35ABB004AFD29 /* Foundation+Log.m */; };
 		7DCF58361CE35DE0004AFD29 /* SSJAddAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF58351CE35DE0004AFD29 /* SSJAddAccountController.m */; };
 		7DCF583C1CE36ACE004AFD29 /* SSJBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF583B1CE36ACE004AFD29 /* SSJBaseNavController.m */; };
-		7DCF583F1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF583E1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m */; };
-		7DCF58421CE37754004AFD29 /* UIImage+FZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF58411CE37754004AFD29 /* UIImage+FZExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +49,22 @@
 		7D166D001CE484F900E90082 /* SSJSkipWelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJSkipWelcomeView.h; sourceTree = "<group>"; };
 		7D166D011CE484F900E90082 /* SSJSkipWelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSkipWelcomeView.m; sourceTree = "<group>"; };
 		7D166D031CE4852900E90082 /* SSJSkipWelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSJSkipWelcomeView.xib; sourceTree = "<group>"; };
-		7D166D401CE4C12100E90082 /* FZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZWebViewController.h; sourceTree = "<group>"; };
-		7D166D411CE4C12100E90082 /* FZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZWebViewController.m; sourceTree = "<group>"; };
-		7D1B789F1CE5DA0C00E8ABCA /* FZCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZCommon.h; sourceTree = "<group>"; };
+		7DC837F61CE70E7E0001A9A4 /* UIBarButtonItem+FZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FZExtension.h"; sourceTree = "<group>"; };
+		7DC837F71CE70E7E0001A9A4 /* UIBarButtonItem+FZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FZExtension.m"; sourceTree = "<group>"; };
+		7DC837F81CE70E7E0001A9A4 /* UIImage+FZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FZExtension.h"; sourceTree = "<group>"; };
+		7DC837F91CE70E7E0001A9A4 /* UIImage+FZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FZExtension.m"; sourceTree = "<group>"; };
+		7DC837FA1CE70E7E0001A9A4 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		7DC837FB1CE70E7E0001A9A4 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		7DC837FC1CE70E7E0001A9A4 /* FZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZCommon.h; sourceTree = "<group>"; };
+		7DC837FE1CE70E7E0001A9A4 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		7DC837FF1CE70E7E0001A9A4 /* FZDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZDebug.h; sourceTree = "<group>"; };
+		7DC838011CE70E7E0001A9A4 /* FZMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZMenuController.h; sourceTree = "<group>"; };
+		7DC838021CE70E7E0001A9A4 /* FZMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZMenuController.m; sourceTree = "<group>"; };
+		7DC838041CE70E7E0001A9A4 /* FZColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZColor.h; sourceTree = "<group>"; };
+		7DC838051CE70E7E0001A9A4 /* FZSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZSize.h; sourceTree = "<group>"; };
+		7DC838061CE70E7E0001A9A4 /* FZStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZStyle.h; sourceTree = "<group>"; };
+		7DC838081CE70E7E0001A9A4 /* FZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZWebViewController.h; sourceTree = "<group>"; };
+		7DC838091CE70E7E0001A9A4 /* FZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZWebViewController.m; sourceTree = "<group>"; };
 		7DC928C61CE1D13100B8DF76 /* suishouji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = suishouji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC928E21CE1D1EC00B8DF76 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DC928E31CE1D1EC00B8DF76 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,29 +73,16 @@
 		7DC928E91CE1D1EC00B8DF76 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC928F21CE1E62100B8DF76 /* WelComeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelComeViewController.h; sourceTree = "<group>"; };
 		7DC928F31CE1E62100B8DF76 /* WelComeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelComeViewController.m; sourceTree = "<group>"; };
-		7DCB38041CE2CEB700C8231F /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
-		7DCB38051CE2CEB700C8231F /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		7DCB38081CE2DBF700C8231F /* SSJAccountListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJAccountListController.h; sourceTree = "<group>"; };
 		7DCB38091CE2DBF700C8231F /* SSJAccountListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJAccountListController.m; sourceTree = "<group>"; };
-		7DCB38471CE32D7000C8231F /* FZMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZMenuController.h; sourceTree = "<group>"; };
-		7DCB38481CE32D7000C8231F /* FZMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZMenuController.m; sourceTree = "<group>"; };
 		7DCB384A1CE32E2300C8231F /* SSJSettingMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJSettingMenuController.h; sourceTree = "<group>"; };
 		7DCB384B1CE32E2300C8231F /* SSJSettingMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSettingMenuController.m; sourceTree = "<group>"; };
 		7DCB384D1CE32F5200C8231F /* SSJBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJBaseController.h; sourceTree = "<group>"; };
 		7DCB384E1CE32F5200C8231F /* SSJBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJBaseController.m; sourceTree = "<group>"; };
-		7DCF582E1CE35AA9004AFD29 /* FZDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZDebug.h; sourceTree = "<group>"; };
-		7DCF582F1CE35ABB004AFD29 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
-		7DCF58311CE35B44004AFD29 /* FZColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZColor.h; sourceTree = "<group>"; };
-		7DCF58321CE35B56004AFD29 /* FZSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZSize.h; sourceTree = "<group>"; };
-		7DCF58331CE35B6B004AFD29 /* FZStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZStyle.h; sourceTree = "<group>"; };
 		7DCF58341CE35DE0004AFD29 /* SSJAddAccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJAddAccountController.h; sourceTree = "<group>"; };
 		7DCF58351CE35DE0004AFD29 /* SSJAddAccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJAddAccountController.m; sourceTree = "<group>"; };
 		7DCF583A1CE36ACE004AFD29 /* SSJBaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJBaseNavController.h; sourceTree = "<group>"; };
 		7DCF583B1CE36ACE004AFD29 /* SSJBaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJBaseNavController.m; sourceTree = "<group>"; };
-		7DCF583D1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FZExtension.h"; sourceTree = "<group>"; };
-		7DCF583E1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FZExtension.m"; sourceTree = "<group>"; };
-		7DCF58401CE37754004AFD29 /* UIImage+FZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FZExtension.h"; sourceTree = "<group>"; };
-		7DCF58411CE37754004AFD29 /* UIImage+FZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FZExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,11 +144,73 @@
 			path = SkipWelcomeView;
 			sourceTree = "<group>";
 		};
-		7D166D3F1CE4C10500E90082 /* FZWebViewController */ = {
+		7DC837F31CE70E7E0001A9A4 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				7D166D401CE4C12100E90082 /* FZWebViewController.h */,
-				7D166D411CE4C12100E90082 /* FZWebViewController.m */,
+				7DC837F41CE70E7E0001A9A4 /* FZLibs */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		7DC837F41CE70E7E0001A9A4 /* FZLibs */ = {
+			isa = PBXGroup;
+			children = (
+				7DC837F51CE70E7E0001A9A4 /* Category */,
+				7DC837FC1CE70E7E0001A9A4 /* FZCommon.h */,
+				7DC837FD1CE70E7E0001A9A4 /* FZDebug */,
+				7DC838001CE70E7E0001A9A4 /* FZMenuController */,
+				7DC838031CE70E7E0001A9A4 /* FZStyle */,
+				7DC838071CE70E7E0001A9A4 /* FZWebViewController */,
+			);
+			path = FZLibs;
+			sourceTree = "<group>";
+		};
+		7DC837F51CE70E7E0001A9A4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7DC837F61CE70E7E0001A9A4 /* UIBarButtonItem+FZExtension.h */,
+				7DC837F71CE70E7E0001A9A4 /* UIBarButtonItem+FZExtension.m */,
+				7DC837F81CE70E7E0001A9A4 /* UIImage+FZExtension.h */,
+				7DC837F91CE70E7E0001A9A4 /* UIImage+FZExtension.m */,
+				7DC837FA1CE70E7E0001A9A4 /* UIView+Layout.h */,
+				7DC837FB1CE70E7E0001A9A4 /* UIView+Layout.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		7DC837FD1CE70E7E0001A9A4 /* FZDebug */ = {
+			isa = PBXGroup;
+			children = (
+				7DC837FE1CE70E7E0001A9A4 /* Foundation+Log.m */,
+				7DC837FF1CE70E7E0001A9A4 /* FZDebug.h */,
+			);
+			path = FZDebug;
+			sourceTree = "<group>";
+		};
+		7DC838001CE70E7E0001A9A4 /* FZMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				7DC838011CE70E7E0001A9A4 /* FZMenuController.h */,
+				7DC838021CE70E7E0001A9A4 /* FZMenuController.m */,
+			);
+			path = FZMenuController;
+			sourceTree = "<group>";
+		};
+		7DC838031CE70E7E0001A9A4 /* FZStyle */ = {
+			isa = PBXGroup;
+			children = (
+				7DC838041CE70E7E0001A9A4 /* FZColor.h */,
+				7DC838051CE70E7E0001A9A4 /* FZSize.h */,
+				7DC838061CE70E7E0001A9A4 /* FZStyle.h */,
+			);
+			path = FZStyle;
+			sourceTree = "<group>";
+		};
+		7DC838071CE70E7E0001A9A4 /* FZWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7DC838081CE70E7E0001A9A4 /* FZWebViewController.h */,
+				7DC838091CE70E7E0001A9A4 /* FZWebViewController.m */,
 			);
 			path = FZWebViewController;
 			sourceTree = "<group>";
@@ -181,8 +243,8 @@
 		7DC928E01CE1D1EC00B8DF76 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7DC837F31CE70E7E0001A9A4 /* Other */,
 				7DC928E11CE1D1EC00B8DF76 /* Main */,
-				7DCB38021CE2CE8D00C8231F /* Common */,
 				7DCB37FE1CE2C81F00C8231F /* SettingsMenu */,
 				7D166CEC1CE4310700E90082 /* AboutMe */,
 				7D166CE81CE41C5800E90082 /* Article */,
@@ -230,32 +292,6 @@
 			path = SettingsMenu;
 			sourceTree = "<group>";
 		};
-		7DCB38021CE2CE8D00C8231F /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				7D1B789F1CE5DA0C00E8ABCA /* FZCommon.h */,
-				7D166D3F1CE4C10500E90082 /* FZWebViewController */,
-				7DCF582D1CE35A72004AFD29 /* FZDebug */,
-				7DCF582C1CE35A69004AFD29 /* FZStyle */,
-				7DCB38421CE320EB00C8231F /* FZMenuController */,
-				7DCB38031CE2CE8D00C8231F /* Category */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		7DCB38031CE2CE8D00C8231F /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				7DCB38041CE2CEB700C8231F /* UIView+Layout.h */,
-				7DCB38051CE2CEB700C8231F /* UIView+Layout.m */,
-				7DCF583D1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.h */,
-				7DCF583E1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m */,
-				7DCF58401CE37754004AFD29 /* UIImage+FZExtension.h */,
-				7DCF58411CE37754004AFD29 /* UIImage+FZExtension.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
 		7DCB38071CE2DBAE00C8231F /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,34 +303,6 @@
 			name = Account;
 			path = suishouji/Classes/Account;
 			sourceTree = SOURCE_ROOT;
-		};
-		7DCB38421CE320EB00C8231F /* FZMenuController */ = {
-			isa = PBXGroup;
-			children = (
-				7DCB38471CE32D7000C8231F /* FZMenuController.h */,
-				7DCB38481CE32D7000C8231F /* FZMenuController.m */,
-			);
-			path = FZMenuController;
-			sourceTree = "<group>";
-		};
-		7DCF582C1CE35A69004AFD29 /* FZStyle */ = {
-			isa = PBXGroup;
-			children = (
-				7DCF58311CE35B44004AFD29 /* FZColor.h */,
-				7DCF58321CE35B56004AFD29 /* FZSize.h */,
-				7DCF58331CE35B6B004AFD29 /* FZStyle.h */,
-			);
-			path = FZStyle;
-			sourceTree = "<group>";
-		};
-		7DCF582D1CE35A72004AFD29 /* FZDebug */ = {
-			isa = PBXGroup;
-			children = (
-				7DCF582F1CE35ABB004AFD29 /* Foundation+Log.m */,
-				7DCF582E1CE35AA9004AFD29 /* FZDebug.h */,
-			);
-			path = FZDebug;
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -368,25 +376,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DC8380A1CE70E7E0001A9A4 /* UIBarButtonItem+FZExtension.m in Sources */,
 				7DC928EB1CE1D1EC00B8DF76 /* main.m in Sources */,
 				7DC928F41CE1E62100B8DF76 /* WelComeViewController.m in Sources */,
+				7DC8380E1CE70E7E0001A9A4 /* FZMenuController.m in Sources */,
 				7DCB380A1CE2DBF700C8231F /* SSJAccountListController.m in Sources */,
 				7D166CEF1CE4312700E90082 /* SSJAboutMeController.m in Sources */,
-				7DCB38061CE2CEB700C8231F /* UIView+Layout.m in Sources */,
+				7DC8380D1CE70E7E0001A9A4 /* Foundation+Log.m in Sources */,
 				7DCB384C1CE32E2300C8231F /* SSJSettingMenuController.m in Sources */,
 				7D166CFE1CE479DF00E90082 /* SSJBaseContentViewController.m in Sources */,
-				7DCF58421CE37754004AFD29 /* UIImage+FZExtension.m in Sources */,
 				7D166CF31CE4664100E90082 /* SSJAvatarButton.m in Sources */,
-				7DCF58301CE35ABB004AFD29 /* Foundation+Log.m in Sources */,
-				7DCF583F1CE36D64004AFD29 /* UIBarButtonItem+FZExtension.m in Sources */,
+				7DC8380C1CE70E7E0001A9A4 /* UIView+Layout.m in Sources */,
 				7D166D021CE484F900E90082 /* SSJSkipWelcomeView.m in Sources */,
+				7DC8380B1CE70E7E0001A9A4 /* UIImage+FZExtension.m in Sources */,
 				7DCF58361CE35DE0004AFD29 /* SSJAddAccountController.m in Sources */,
 				7DCB384F1CE32F5200C8231F /* SSJBaseController.m in Sources */,
 				7DC928EA1CE1D1EC00B8DF76 /* AppDelegate.m in Sources */,
 				7D166CF91CE473EB00E90082 /* SSJMenuFooterView.m in Sources */,
+				7DC8380F1CE70E7E0001A9A4 /* FZWebViewController.m in Sources */,
 				7D166CEB1CE41CA900E90082 /* SSJArticleController.m in Sources */,
-				7D166D421CE4C12100E90082 /* FZWebViewController.m in Sources */,
-				7DCB38491CE32D7000C8231F /* FZMenuController.m in Sources */,
 				7DCF583C1CE36ACE004AFD29 /* SSJBaseNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
