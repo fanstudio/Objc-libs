@@ -51,6 +51,7 @@
 		7D166D031CE4852900E90082 /* SSJSkipWelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSJSkipWelcomeView.xib; sourceTree = "<group>"; };
 		7D166D401CE4C12100E90082 /* FZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZWebViewController.h; sourceTree = "<group>"; };
 		7D166D411CE4C12100E90082 /* FZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZWebViewController.m; sourceTree = "<group>"; };
+		7D1B789F1CE5DA0C00E8ABCA /* FZCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZCommon.h; sourceTree = "<group>"; };
 		7DC928C61CE1D13100B8DF76 /* suishouji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = suishouji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC928E21CE1D1EC00B8DF76 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DC928E31CE1D1EC00B8DF76 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -232,6 +233,7 @@
 		7DCB38021CE2CE8D00C8231F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7D1B789F1CE5DA0C00E8ABCA /* FZCommon.h */,
 				7D166D3F1CE4C10500E90082 /* FZWebViewController */,
 				7DCF582D1CE35A72004AFD29 /* FZDebug */,
 				7DCF582C1CE35A69004AFD29 /* FZStyle */,
