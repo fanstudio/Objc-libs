@@ -13,10 +13,14 @@
 #import "UIView+Layout.h"
 #import "SSJBaseController.h"
 
+// 子页面
 #import "SSJBaseNavController.h"
 #import "SSJAccountListController.h"
 #import "SSJArticleController.h"
 #import "SSJAboutMeController.h"
+
+// 登录页面
+#import "SSJLoginController.h"
 
 @interface SSJSettingMenuController ()
 
@@ -131,7 +135,7 @@
 #pragma mark 登录
 
 - (void)onClickUserIcon {
-    FZTrace;
+    [self presentViewController:[SSJLoginController new] animated:YES completion:nil];
 }
 
 @end
